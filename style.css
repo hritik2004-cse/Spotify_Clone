@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* utility classes */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --col-1:#000;
+    --col-2:#fff;
+    --col-3:#1db954;
+    --col-4:#212121;
+    --col-5:#121212;
+    --col-6:#535353;
+    --col-7:#b3b3b3;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.capital{
+    text-transform: capitalize;
+}
+
+.transition{
+    transition: all .4s ease;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-jcsb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-jcse{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* header css */
+
+body{
+    height:100%;
+    width: 100%;
+    background-color: var(--col-1);
+    color: var(--col-2);
+}
+
+nav{
+    height:10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: var(--col-1);
+    top: 0;
+}
+
+#logo{
+    width: 5%;
+    height: 100%;
+    object-fit: contain;
+    scale:2.5;
+    margin-left: 10vh;
+    margin-top: -4vh;
+}
+
+.middle-div{
+    width: 40%;
+    height: 100%;
+}
+
+.fa-home{
+    margin-right: 1vh;
+    font-size: 3vh;
+    background-color: var(--col-4);
+    padding: 1.5vh;
+    border-radius: 50%;
+}
+
+.input-div{
+    width: 90%;
+    height: 60%;
+    background-color: var(--col-4);
+    border-radius: 20vh;
+}
+
+.input-div i{
+    color: var(--col-7);
+}
+
+.fa-magnifying-glass{
+    margin-left: 1.6vh;
+    font-size: 3.5vh;
+}
+
+.fa-folder-open{
+    font-size: 3.1vh;
+}
+
+#search-bar{
+    height: 100%;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2vh;
+    font-weight: 500;
+    color: var(--col-7);
+}
+
+#search-bar::placeholder{
+    font-size: 2vh;
+    color: var(--col-7);
+}
+
+.log-btn-div{
+    height: 100%;
+    width: 16%;
+    margin-right: 2vh;
+}
+
+.log-btn-div button{
+    padding: 2vh 3.8vh;
+    font-size: 2.1vh;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+#log-btn{
+    border-radius: 20vh;
+    background-color: var(--col-2);
+    color: var(--col-1);
+}
+
+#sign-btn{
+    background-color: transparent;
+    color: var(--col-7);
+}
+
+.main-section{
+    position: relative;
+    width: 73.7%;
+}
+
+.hero-section{
+    height: 80vh;
+    width: 73.7%;
+    float: right;
+    top: 10vh;
+    left: 26%;
+    background: linear-gradient(var(--col-6) 1%,var(--col-5),var(--col-5),var(--col-5),var(--col-5));
+    border-radius: 1vh;
+    position: fixed;
+}
+
+.section-2{
+    position: absolute;
+    width: 100%;
+    height: 225vh;
+    background-color:transparent;
+    margin-top: 10vh;
+    margin-left:36%;
+    z-index: 2;
+    scrollbar-width: thin;
+    scrollbar-color: #fff;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.section-2-part-1{
+    height: 40vh;
+    width: 100%;
+}
+
+.section-2-part-2{
+    height: 40vh;
+    width: 100%;
+}
+
+.section-2-part-3{
+    height: 40vh;
+    width: 100%;
+}
+
+.section-2-part-4{
+    height: 40vh;
+    width: 100%;
+}
+
+.catagory{
+    margin: 2vh 1.8vh;
+}
+
+.catagory h2{
+    color: var(--col-2);
+    font-size: 3vh;
+}
+
+.catagory h2:hover{
+    text-decoration: underline;
+}
+
+.catagory a{
+    text-decoration: none;
+    color: var(--col-7);
+    font-size: 2vh;
+    font-weight: 700;
+    margin-right: 2vh;
+}
+
+.div-artists{
+    width: 100%;
+}
+
+.artists-card{
+    position: relative;
+    width: 21vh;
+    transition: all .3s ease-in-out;
+    padding: .5vh;
+    text-align: center;
+    border-radius: 1vh;
+    border: none;
+}
+
+.artists-card:hover{
+    background-color: var(--col-6);
+}
+
+.artists-card img{
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.fa-play{
+    color: var(--col-1);
+    background-color: var(--col-3);
+    padding: 2vh 2.5vh;
+    font-size: 2.7vh;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin-bottom: 30%;
+    display: none;
+    opacity: 0;
+}
+
+.albums:hover .fa-play{
+    transform: translateY(-60%);
+    opacity: 1;
+}
+
+.artists-card:hover .fa-play{
+    transform: translateY(-60%);
+    opacity: 1;
+}
+
+.artists-card h2{
+    font-size: 1.5vh;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+
+.artists-card h2:hover{
+    text-decoration: underline;
+}
+
+.artists-card p{
+    font-size: 2vh;
+    color: var(--col-7);
+    margin-top: 1vh;
+}
+
+.albums{
+    position: relative;
+    width: 21vh;
+    transition: all .3s ease-in-out;
+    padding: .5vh;
+    text-align: center;
+    border-radius: 1vh;
+    border: none;
+}
+
+.albums:hover{
+    background-color: var(--col-6);
+}
+
+.albums img{
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 1vh;
+}
+
+.albums h2{
+    font-size: 1.8vh;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+
+.albums h2:hover{
+    text-decoration: underline;
+}
+
+.albums p{
+    font-size: 2vh;
+    color: var(--col-7);
+    margin-top: 1vh;
+}
+
+aside{
+    height: 80vh;
+    background-color: var(--col-5);
+    width: 25%;
+    margin: 1vh;
+    margin-top: 0;
+    position: fixed;
+    border: none;
+    border-radius: 1vh;
+    top: 10vh;
+    color: var(--col-1);
+}
+
+aside .div-1{
+    margin: 2vh;
+    color: var(--col-7);
+    height: 10%;
+}
+
+.inner-div-1{
+    width: 50%;
+}
+
+.fa-layer-group{
+    font-size: 4vh;
+}
+
+.inner-div-1 h2{
+    font-size: 2.7vh;
+}
+
+.div-1 .fa-plus{
+    font-size: 3vh;
+}
+
+.common-div{
+    background-color: var(--col-4);
+    color: var(--col-2);
+    margin: 1vh;
+    height: 25%;
+    border-radius: 1vh;
+    padding: 2vh;
+    margin-top: 5vh;
+}
+
+.common-div h2{
+    margin: 1vh;
+    font-size: 2vh;
+}
+
+.common-div p{
+    margin: 1vh;
+    font-size: 1.8vh;
+}
+
+.common-div button{
+    background-color: var(--col-2);
+    padding: 1.3vh 2vh;
+    border: none;
+    border-radius: 20vh;
+    font-size: 2vh;
+    font-weight: 700;
+    margin: 1vh;
+    color: var(--col-1);
+}
+
+.common-div button:hover{
+    scale: 1.1;
+}
+
+.a-comm{
+    margin: 2vh 1vh;
+}
+
+.a-comm a{
+    text-decoration: none;
+    margin-left: 1vh;
+    color: var(--col-7);
+    font-size: 1.7vh;
+}
+
+aside button{
+    padding: 1vh 1.5vh;
+    border: .3vh solid var(--col-7);
+    background-color: transparent;
+    color: var(--col-7);
+    font-size: 2vh;
+    font-weight: 700;
+    border-radius: 20vh;
+    margin: 2vh;
+}
+
+.fixed{
+    height: 9vh;
+    width: 100%;
+    background: rgb(185,10,223);
+    background: linear-gradient(90deg, rgba(185,10,223,1) 0%, rgba(122,2,165,1) 35%, rgba(0,212,255,1) 100%);
+    position: fixed;
+    top: 90vh;
+    margin: 1vh;
+    z-index: 3;
+}
+
+#div-1{
+    margin-left: 2vh;
+}
+
+#div-1 p{
+    font-size: 2vh;
+    margin: .5vh;
+    font-weight: 700
+}
+
+#fixed-btn{
+    margin-right: 2vh;
+    padding: 2vh 4vh;
+    border: none;
+    border-radius:20vh;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.div-artists h3{
+    word-wrap: break-word;
+    font-size: 1.8vh;
+    font-weight: 300;
+}
+
+*{
+    /* border: 1px solid red; */
+}
+
+footer{
+    height: 55vh;
+    /* background-color: #1db954; */
+    flex-direction: column;
+}
+
+.footer-div-1{
+    height: 70%;
+    width: 100%;
+}
+
+.footer-div-2{
+    height: 20%;
+    width: 100%;
+}
+
+table{
+    height: 80%;
+    width: 60%;
+    margin-left: 2vh;
+}
+
+td a{
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: 500;
+    color: var(--col-7);
+}
+
+.social-icons{
+    width: 20%;
+    margin-right: 2vh;
+}
+
+.social-icons .fa-brands{
+    font-size: 3vh;
+    color: var(--col-2);
+    padding: 2vh;
+    border-radius: 50%;
+    background-color: var(--col-4);
+}
+
+.social-icons .fa-brands:hover{
+    background-color: var(--col-6);
+}
+
+.social-icons .fa-instagram{
+    padding: 2vh 2.1vh;
+}
+
+hr{
+    width: 97%;
+    border: .1vh solid var(--col-7);
+}
+
+.footer-div-2 h2{
+    font-size: 2vh;
+    font-weight: 500;
+    margin-left: 2vh;
+    color: var(--col-7);
+}
+
+.space{
+    height: 10vh;
+    width: 100%;
+}
+
+.space-1{
+    width: 50%;
+}

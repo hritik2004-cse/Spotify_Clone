@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify clone- by hritik sharma</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a9da22d09f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/logo/icon.png" />
+  </head>
+
+  <body>
+    <nav class="flex-jcsb">
+      <img src="images/logo/logo.png" alt="logo" id="logo" />
+      <div class="middle-div flex">
+        <i class="fa-solid fa-home pointer"></i>
+        <div class="input-div flex-jcse">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="What do you want to play ?"
+          />
+          <i class="fa-solid fa-folder-open"></i>
+        </div>
+      </div>
+      <div class="log-btn-div flex-jcsb">
+        <button class="pointer" id="sign-btn">Sign up</button>
+        <button class="pointer" id="log-btn">Log in</button>
+      </div>
+    </nav>
+    <section class="main-section">
+      <section class="hero-section"></section>
+      <section class="section-2">
+        <div class="section-2-part-1">
+          <div class="catagory flex-jcsb">
+            <h2 class="pointer">Popular artists</h2>
+            <a href="#">Show all</a>
+          </div>
+          <div class="div-artists flex">
+            <!-- artist 1 -->
+            <div class="artists-card pointer">
+              <img
+                src="images/popular artists/ar-rehman.webp"
+                alt="AR Rehman"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>AR Rehman</h2>
+              <p>Artist</p>
+            </div>
+            <!-- artist 2 -->
+            <div class="artists-card pointer">
+              <img
+                src="images/popular artists/arjit-singh.webp"
+                alt="Arjit Singh"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2 title="Arjit Singh">Arjit Singh</h2>
+              <p>Artist</p>
+            </div>
+            <!-- artist 3 -->
+            <div class="artists-card pointer">
+              <img
+                src="images/popular artists/atif-aslam.webp"
+                alt="Atif Aslam"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2 title="Atif Aslam">Atif Aslam</h2>
+              <p>Artist</p>
+            </div>
+            <!-- artist 4 -->
+            <div class="artists-card pointer">
+              <img src="images/popular artists/pritam.webp" alt="Pritam" />
+              <i class="fa-solid fa-play transition"></i>
+              <h2 title="Pritam">Pritam</h2>
+              <p>Artist</p>
+            </div>
+            <!-- artist 5 -->
+            <div class="artists-card pointer">
+              <img
+                src="images/popular artists/shreya-ghoshal.webp"
+                alt="Shreya Ghoshal"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2 title="shreya-ghoshal">Shreya Ghoshal</h2>
+              <p>Artist</p>
+            </div>
+            <!-- artist 6 -->
+            <div class="artists-card pointer">
+              <img
+                src="images/popular artists/guru-randhawa.webp"
+                alt="Guru randhawa"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2 title="guru-randhawa">Guru Randhawa</h2>
+              <p>Artist</p>
+            </div>
+            <!-- artist 7 -->
+            <div class="hover artists-card pointer">
+              <img
+                src="images/popular artists/sonu-nigam.webp"
+                alt="Sonu Nigam"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2 title="sonu-nigam">Sonu Nigam</h2>
+              <p>Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-2-part-2">
+          <div class="catagory flex-jcsb">
+            <h2 class="pointer">Popular albums and singles</h2>
+            <a href="#">Show all</a>
+          </div>
+          <div class="album-div flex">
+            <div class="hover albums pointer">
+              <img
+                src="images/popular album/bones.webp"
+                alt="Bones- Imagine Dragons"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>Bones</h2>
+              <p>Imagine Dragons</p>
+            </div>
+            <div class="hover albums pointer">
+              <img
+                src="images/popular album/brown-munde.webp"
+                alt="Brown munde- AP Dhillon"
+              />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>Brown Munde</h2>
+              <p>AP Dhillon</p>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/popular album/faded.webp" alt="Faded- Alan Walker" />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>Faded</h2>
+              <p>Alan Walker</p>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/popular album/goat.webp" alt="G.O.A.T- Diljit Dosanjh" />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>G.O.A.T</h2>
+              <p>Diljit Dosanjh</p>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/popular album/millionare.webp" alt="Millionare- Honey Singh" />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>Millionare</h2>
+              <p>Honey Singh</p>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/popular album/tum-mare-ho.webp" alt="tum mare ho- Anuv Jain" />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>Tum Mare Ho</h2>
+              <p>Anuv Jain</p>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/popular album/295.webp" alt="295- Sidhu Moosewala" />
+              <i class="fa-solid fa-play transition"></i>
+              <h2>295</h2>
+              <p>Sidhu Moosewala</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-2-part-3">
+          <div class="catagory flex-jcsb">
+            <h2 class="pointer">Featured charts</h2>
+            <a href="#">Show all</a>
+          </div>
+          <div class="div-artists flex">
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top1.webp" alt="top" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top2.webp" alt="top 1" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top3.webp" alt="top 2" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top4.webp" alt="top 3" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top.webp" alt="top 4" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top5.webp" alt="top 5" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/top songs/Top6.webp" alt="top 6" />
+              <h2>Your weekly update of the most played...</h2>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+          </div>
+        </div>
+        <div class="section-2-part-4">
+          <div class="catagory flex-jcsb">
+            <h2 class="pointer">Popular radio</h2>
+            <a href="#">Show all</a>
+          </div>
+          <div class="div-artists flex">
+            <div class="hover albums pointer">
+              <img src="images/radio/Top.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/radio/Top1.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/radio/Top2.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/radio/Top3.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/radio/Top4.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/radio/Top5.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+            <div class="hover albums pointer">
+              <img src="images/radio/Top6.webp" alt="radio 1">
+              <h3>with Arjit Singh, Shreya Goshal, Sonu</h3>
+              <i class="fa-solid fa-play transition"></i>
+            </div>
+          </div>
+        </div>
+        <footer class="flex-jcse">
+          <div class="footer-div-1 flex-jcsb">
+            <table>
+              <tr>
+                <th>Company</th>
+                <th>Communities</th>
+                <th>Useful links</th>
+                <th>Spotify plans</th>
+              </tr>
+              <tr>
+                <td class="capital">
+                  <a href="https://www.spotify.com/in-en/about-us/contact/"
+                    >about</a
+                  >
+                </td>
+                <td class="capital">
+                  <a href="https://artists.spotify.com/home">for artists</a>
+                </td>
+                <td class="capital">
+                  <a href="https://support.spotify.com/in-en/">support</a>
+                </td>
+                <td class="capital">
+                  <a
+                    href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual"
+                    >Premium Individual</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="capital">
+                  <a href="https://www.lifeatspotify.com/">jobs</a>
+                </td>
+                <td class="capital">
+                  <a href="https://developer.spotify.com/">developers</a>
+                </td>
+                <td class="capital">
+                  <a href="https://www.spotify.com/in-en/free/"
+                    >free mobile app</a
+                  >
+                </td>
+                <td class="capital">
+                  <a
+                    href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo"
+                    >Premium Duo</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="capital"><a href="https://newsroom.spotify.com/">for the record</a></td>
+                <td class="capital"><a href="">advertising</a></td>
+                <td class="capital"><a href=""></a></td>
+                <td class="capital"><a href="">premium family</a></td>
+              </tr>
+              <tr>
+                <td class="capital"><a href=""></a></td>
+                <td class="capital"><a href="">investors</a></td>
+                <td class="capital"><a href=""></a></td>
+                <td class="capital"><a href="">premium student</a></td>
+              </tr>
+              <tr>
+                <td class="capital"><a href=""></a></td>
+                <td class="capital"><a href="">vendors</a></td>
+                <td class="capital"><a href=""></a></td>
+                <td class="capital"><a href="">spotify free</a></td>
+              </tr>
+            </table>
+            <div class="social-icons flex-jcsb">
+              <a href="https://www.instagram.com/spotify">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://x.com/spotify">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.facebook.com/Spotify">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-div-2 flex-jcsb">
+            <h2>
+              &copy <span id="footer"></span> Spotify AB
+              <script>
+                const date = new Date();
+                const footer = document.getElementById("footer");
+
+                footer.innerText = date.getFullYear();
+              </script>
+            </h2>
+            <div class="space-1"></div>
+          </div>
+        </footer>
+        <div class="space"></div>
+      </section>
+    </section>
+    <aside>
+      <div class="div-1 flex-jcsb">
+        <div class="inner-div-1 flex-jcsb">
+          <i class="fa-solid fa-layer-group"></i>
+          <h2 class="pointer capital">your library</h2>
+        </div>
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="div-2 common-div">
+        <h2>Create your first playlist</h2>
+        <p>It's easy, we'll help you</p>
+        <button class="pointer transition">create playlist</button>
+      </div>
+      <div class="div-3 common-div">
+        <h2>Let's find some podcasts to follow</h2>
+        <p>We'll keep you updated on new episodes.</p>
+        <button class="pointer transition">Browse podcasts</button>
+      </div>
+      <div class="a-comm">
+        <a href="#" class="capital pointer">legal</a>
+        <a href="#" class="capital pointer">safety& privacy center</a>
+        <a href="#" class="capital pointer">privacy policy</a>
+      </div>
+      <div class="a-comm">
+        <a href="#" class="capital pointer">cookies</a>
+        <a href="#" class="capital pointer">about ads</a>
+        <a href="#" class="capital pointer">accessability</a>
+      </div>
+      <button class="capital pointer">
+        <i class="fa-solid fa-globe"></i> english
+      </button>
+    </aside>
+    <section class="fixed flex-jcsb">
+      <div id="div-1">
+        <p>Preview of Spotify</p>
+        <p>
+          Sign up to get unlimited song and podcast with occasional ads. No
+          credit card needed.
+        </p>
+      </div>
+      <button id="fixed-btn" class="pointer">Sign up free</button>
+    </section>
+  </body>
+</html>
